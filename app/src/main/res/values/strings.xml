@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SunriseSunset</string>
+    <string name="sun_sunrise"><![CDATA[Sunrise: %1$s]]></string>
+    <string name="sun_sunset"><![CDATA[Sunset: %1$s]]></string>
+    <string name="sun_solar_noon"><![CDATA[Solar noon: %1$s]]></string>
+    <string name="sun_day_length"> <![CDATA[Day length: %1$s]]></string>
+    <string name="ok">OK</string>
+    <string name="current_position">Current Position</string>
+    <string name="search">Search</string>
+    <string name="refresh_button">refresh</string>
+    <string name="failed_to_get_current_location">Failed to get current location</string>
+</resources>

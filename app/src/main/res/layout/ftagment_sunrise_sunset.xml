@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/place_autocomplete_fragments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:listSeparatorTextViewStyle"
+        android:name="com.google.android.gms.location.places.ui.SupportPlaceAutocompleteFragment">
+
+    </fragment>
+
+    <TextView
+        android:textColor="@color/colorText"
+        android:id="@+id/sun_sunrise"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/sun_sunrise"
+        app:layout_constraintBottom_toTopOf="@+id/sun_sunset"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:textColor="@color/colorText"
+        android:id="@+id/sun_sunset"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/sun_sunset"
+        app:layout_constraintBottom_toTopOf="@+id/sun_solar_noon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:textColor="@color/colorText"
+        android:id="@+id/sun_solar_noon"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/sun_solar_noon"
+        app:layout_constraintBottom_toTopOf="@+id/sun_day_length"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:textColor="@color/colorText"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/sun_day_length"
+        android:id="@+id/sun_day_length"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
